@@ -3,9 +3,9 @@
 
 
 ### Prerequisites
-1. Create Jenkins Server
+1. Need to have Jenkins Server
 
-   ### Setup steps 
+### Setup steps 
 2. Create a S3 bucket to store artifacts  
     `S3 --> Create bucket `
       ```sh 
@@ -18,6 +18,8 @@
    Permission: AmazonS3FullAccess 
    Tags: key - Name, Value - S3FullAccess Role 
    name: S3_Full_Access
+   
+   Then go to EC2 portal select the jenkins EC2 and Action --> instance settings --> attach/replace IAM role then attach the S3FullAccess Role
    ```
    
 4. Install "S3 Publisher" plugin on Jenkins  
