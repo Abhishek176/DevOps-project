@@ -30,7 +30,7 @@
   `Manage Jenkins --> Configure Systems --> Amazon S3 profiles` 
    ```sh
    Profile name : s3-artifact-repository 
-   Use IAM Role : chose
+   Use IAM Role : choose
    ```
 
 6. Create a job to store artifacts under S3.
