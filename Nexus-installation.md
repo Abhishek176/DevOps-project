@@ -19,7 +19,7 @@ As a good security practice, it is not advised to run nexus service as root. so 
 ```sh 
 sudo adduser nexus
 # visudo \\ nexus   ALL=(ALL)       NOPASSWD: ALL
-sudo chown -R nexus:nexus /opt/nexus
+sudo chown -R nexus:nexus /app/nexus
 ```
 
 Open /app/nexus/bin/nexus.rc file, uncomment run_as_user parameter and set it as following.
